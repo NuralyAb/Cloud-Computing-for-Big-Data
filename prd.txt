@@ -1,0 +1,19 @@
+Feature: Scrape IT News for Almaty
+
+Create function get_almaty_it_news().
+
+Requirements:
+1. Must scrape headlines from a public IT news site (or IT section of a news portal) for Алматы.
+2. Must validate that the page content exists.
+3. Must handle connection errors (try/except).
+4. Must use timeout in requests.
+5. Must return structured JSON:
+   {
+       "city": "Almaty",
+       "headlines": [list of strings]
+   }
+6. Must not crash if HTML structure changes.
+7. Must include docstring.
+8. Must not use global variables.
+9. Must log errors instead of printing.
+10. Must return at least 5 headlines if available.

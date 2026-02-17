@@ -1,0 +1,57 @@
+{
+  "compliance_score": 20,
+  "status": "FAIL",
+  "audit_log": [
+    {
+      "requirement": "Must scrape headlines from a public IT news site (or IT section of a news portal) for Алматы.",
+      "met": true,
+      "comment": ""
+    },
+    {
+      "requirement": "Must validate that the page content exists.",
+      "met": false,
+      "comment": "There is no validation to check if the page content exists before scraping."
+    },
+    {
+      "requirement": "Must handle connection errors (try/except).",
+      "met": false,
+      "comment": "The code does not include error handling to manage connection issues."
+    },
+    {
+      "requirement": "Must use timeout in requests.",
+      "met": false,
+      "comment": "The 'requests.get' method does not implement a timeout."
+    },
+    {
+      "requirement": "Must return structured JSON.",
+      "met": true,
+      "comment": ""
+    },
+    {
+      "requirement": "Must not crash if HTML structure changes.",
+      "met": false,
+      "comment": "The code does not handle situations where the HTML structure may change."
+    },
+    {
+      "requirement": "Must include docstring.",
+      "met": false,
+      "comment": "The function lacks a docstring explaining its purpose."
+    },
+    {
+      "requirement": "Must not use global variables.",
+      "met": true,
+      "comment": ""
+    },
+    {
+      "requirement": "Must log errors instead of printing.",
+      "met": false,
+      "comment": "The code does not have any logging implemented for errors."
+    },
+    {
+      "requirement": "Must return at least 5 headlines if available.",
+      "met": false,
+      "comment": "There is no check to ensure at least 5 headlines are returned."
+    }
+  ],
+  "security_check": "Unsafe"
+}
