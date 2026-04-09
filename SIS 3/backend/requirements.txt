@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+supabase
+openai
+python-telegram-bot[asyncio]
+python-dotenv
+pydantic
+httpx
+python-slugify
